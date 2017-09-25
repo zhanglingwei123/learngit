@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0,width=device-width,height=device-height" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>h5相册</title>
+		<link rel="stylesheet" href="css/album.css" />
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+		<style>
+			.module1 img {
+				transform: translate(-50%,-50%) rotateZ(-20deg);
+			}
+			.module2 img.img_1 {
+				max-width:70%;
+				max-height:50%;
+				transform: translate(-60%,-110%) rotateZ(-20deg);
+			}
+			.module2 img.img_2 {
+				max-width:50%;
+				max-height: 50%;
+				transform: translate(-55%,0) rotateZ(30deg);
+			}
+			.module3 img.img_1 {
+				max-width:50%;
+				max-height:50%;
+				transform: translate(-65%,-120%) rotateZ(20deg);
+			}
+			.module3 img.img_2 {
+				max-width:70%;
+				max-height: 80%;
+				transform: translate(-55%,30%) rotateZ(-30deg);
+			}
+			.module4 img {
+				transform: translate(-50%,-50%) rotateZ(10deg);
+			}
+			.module5 img {
+				transform: translate(-50%,-50%) rotateZ(-10deg);
+			}
+			.module6 img {
+				transform: translate(-50%,-50%) rotateZ(-30deg);
+			}
+			.module7 img {
+				transform: translate(-50%,-50%) rotateZ(10deg);
+			}
+			.module7 img.img_1 {
+				max-width:50%;
+				max-height:50%;
+				transform: translate(-65%,-120%) rotateZ(20deg);
+			}
+			.module7 img.img_2 {
+				max-width:70%;
+				max-height: 80%;
+				transform: translate(-55%,30%) rotateZ(-10deg);
+			}
+			.module8 img {
+				transform: translate(-50%,-50%) rotateZ(-10deg);
+			}
+			.module8 img.img_1 {
+				max-width:50%;
+				max-height:50%;
+				transform: translate(-65%,-120%) rotateZ(-20deg);
+			}
+			.module8 img.img_2 {
+				max-width:70%;
+				max-height: 80%;
+				transform: translate(-55%,30%) rotateZ(10deg);
+			}
+		</style>
+	</head>
+	<body>
+		<section class="wrap">
+			<section class="module1 module">
+				<p>余杭塘河的风景</p>
+				<img src="img/pic1.jpg" />
+			</section>
+			<section class="module2 module">
+				<p>万塘夜市的喧嚣</p>
+				<img src="img/pic2.jpg" class="img_1"/>
+				<img src="img/pic3.jpg" class="img_2"/>
+			</section>
+			<section class="module3 module">
+				<p>灯火通明</p>
+				<img src="img/pic6.jpg" class="img_1"/>
+				<img src="img/pic7.jpg" class="img_2"/>
+			</section>
+			<section class="module4 module">
+				<p>蓝天白云</p>
+				<img src="img/pic4.jpg" />
+			</section>
+			<section class="module5 module">
+				<p>享受我的小生活</p>
+				<img src="img/pic5.jpg" />
+			</section>
+			<section class="module6 module">
+				<p>灯火通明</p>
+				<img src="img/pic6.jpg" />
+			</section>
+			<section class="module7 module">
+				<p>蓝天白云</p>
+				<img src="img/pic7.jpg" class="img_1"/>
+				<img src="img/pic8.jpg" class="img_2"/>
+			</section>
+			<section class="module8 module">
+				<p>享受我的小生活</p>
+				<img src="img/pic9.jpg" class="img_1"/>
+				<img src="img/pic10.jpg" class="img_2"/>
+			</section>
+		</section>
+		<section class="step"></section>
+		<section class="music">
+			<i class="iconfont">&#xe600;</i>
+			<audio controls="controls" autoplay="autoplay" id="music" loop="loop">
+				<source src="music/Mindy Gledhill - All About Your Heart.mp3"></source>
+			</audio>
+		</section>
+		<script>
+			play={
+				auto:4000,//自动播放并且自动播放时间为4000ms
+				type:["Top","Bottom","Left","Right","Top","Bottom","Left","Right"],//图片进入方式
+			}
+		</script>
+		<script type="text/javascript" src="js/album.js" ></script>
+	</body>
+</html>
